@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+    }
+
+    :root {
+        --primary: rgb(165, 153, 153);
+        --secondery: rgb(255, 63, 63);
+        --attract: rgba(0, 0, 0, 0.671);
+        --last: rgba(255, 255, 255, 0.945);
+    }
+
+    .container {
+        width: auto;
+        height: 100vh;
+        position: relative;
+        background: url(img/black-friday-sales-sign-neon-light.png), rgba(0, 0, 0, 0.74);
+        background-position: center;
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+
+    .signupfoam {
+        margin: 50px auto;
+        width: 300px;
+        height: 360px;
+        background-color: rgba(0, 0, 0, 0.425);
+        box-shadow: 0px 1px 10px var(--secondery);
+        padding: 16px;
+    }
+
+    h2 {
+        color: var(--last);
+        text-align: center;
+    }
+
+    label{
+        color: var(--last);
+    }
+    input{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 96%;
+        padding: 5px;
+        background-color: rgba(197, 193, 193, 0);
+        color: var(--last);
+        outline: var(--secondery);
+       border: none;
+    }
+   button{
+    margin-top: 12px;
+    width: 101%;
+    padding: 4px;
+    border: 1px solid var(--secondery);
+    background-color: var(--secondery);
+    color: var(--last);
+   }
+   button:hover{
+     opacity: 0.6;
+   }
+   
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="signupfoam">
+            <h2>shiptofy</h2><br>
+            <label for="signup-name">Name:</label><br>
+            <input id="signup-name" type="text" placeholder="Name"><br>
+            <label for="signup-email">Email:</label><br>
+            <input id="signup-email" type="email" placeholder="Email"><br>
+            <label for="signup-Ph-Number">Ph-Number:</label><br>
+            <input id="signup-Ph-Number" type="number" placeholder="Ph-number"><br>
+            <label for="signup-password">password:</label><br>
+            <input id="signup-password" type="password" placeholder="password"><br>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </div>
+
+    <script src="app.js">
+    </script>
+
+</body>
+
+</html>

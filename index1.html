@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+    }
+
+    :root {
+        --primary: rgb(165, 153, 153);
+        --secondery: rgb(255, 63, 63);
+        --attract: rgba(0, 0, 0, 0.671);
+        --last: rgba(255, 255, 255, 0.945);
+    }
+
+    .container1 {
+        width: 100%;
+        position: relative;
+        height: 80px;
+        background-color: var(--primary);
+        text-align: center;
+        align-content: center;
+        position: fixed;
+        margin-bottom: 30px;
+        z-index: 3;
+       
+    }
+    .container1>h1{
+        color: var(--last);
+    }
+    .container1>i{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 25px;
+    color: var(--last);
+    }
+    .container1>i:hover{
+        color: var(--secondery);
+    }
+    .user-cart-list{
+        width: auto;
+        height: auto;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 30px;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        justify-content: space-evenly;
+
+    }
+    .cart-card{
+        width: 350px;
+        height: 530px;
+        padding: 8px;
+        border: 1px solid;
+        text-align: center;
+
+    }
+    .main-image{
+        width: 100%;
+        height: 250px;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    img:hover{
+        opacity: 0.6;
+    }
+    p{
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    button{
+        width: 100%;
+        margin-top: 10px;
+        padding: 3px;
+        border: 1px solid var(--secondery);
+        background-color: var(--secondery);
+        color: var(--last);
+    }
+    button:hover{
+        opacity: 0.6;
+    }
+</style>
+
+<body>
+
+    <div class="container1">
+        <h1>shiptofy</h1>
+        <i class="fas fa-arrow-left backhome"></i>
+    </div>
+
+    <div class="user-cart-list">
+
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
